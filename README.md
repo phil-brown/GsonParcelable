@@ -34,7 +34,7 @@ public class Person extends GsonParcelable {
 	String occupation;
 	int age;
 	
-	Gson mGson = new Gson();
+	static Gson sGson = new Gson();
 }
 ````
 
