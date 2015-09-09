@@ -6,6 +6,7 @@ import android.os.Parcelable;
 import com.google.gson.Gson;
 
 import java.lang.reflect.Array;
+import java.lang.reflect.ParameterizedType;
 
 /**
  * Parcelable Creator class that uses GSON to convert a Parcel to an Object
@@ -26,6 +27,13 @@ public abstract class GsonCreator<T extends GsonParcelable> implements Parcelabl
      */
     public GsonCreator(Class<T> clazz) {
         this.clazz = clazz;
+    }
+
+    /**
+     * Constructor. No class is required as the parameter, as it will be determined automatically.
+     */
+    public GsonCreator() {
+        this.clazz = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
     }
 
     @Override

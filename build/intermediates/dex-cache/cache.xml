@@ -2,39 +2,46 @@
 <items version="2" >
 
     <item
+        jar="/Users/phil/Documents/Development/github/GsonParcelable/gson_parcelable/build/intermediates/bundles/debug/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b2547639b222e7bc915d636eb0d30e5566cff7ad">
+        <dex dex="/Users/phil/Documents/Development/github/GsonParcelable/gson_parcelable/build/intermediates/pre-dexed/test/debug/classes-c706c5db5df954685991da778551d863ff27dbf5.jar" />
+    </item>
+    <item
         jar="/Users/phil/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/Users/phil/Documents/Development/personal/GsonParceable/app/build/intermediates/pre-dexed/debug/gson-2.3.1-a0c6c603b776a0454b475e34ea9a709051ff2d27.jar" />
+        <dex dex="/Users/phil/Documents/Development/github/GsonParcelable/gson_parcelable/build/intermediates/pre-dexed/test/debug/gson-2.3.1-a0c6c603b776a0454b475e34ea9a709051ff2d27.jar" />
     </item>
     <item
-        jar="/Users/phil/Documents/Development/personal/GsonParceable/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/libs/internal_impl-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/Users/phil/Documents/Development/personal/GsonParceable/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-c0b3d4c22d9a673aa68bac78aa7eaa1dfe96d717.jar" />
-    </item>
-    <item
-        jar="/Users/phil/Documents/Development/personal/GsonParceable/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/Users/phil/Documents/Development/personal/GsonParceable/app/build/intermediates/pre-dexed/debug/classes-327bc2b73f197e96a0c47e84dba4c97b7da282cc.jar" />
-    </item>
-    <item
-        jar="/Users/phil/Documents/Development/personal/GsonParceable/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/classes.jar"
+        jar="/Users/phil/Documents/Development/github/GsonParcelable/gson_parcelable/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/Users/phil/Documents/Development/personal/GsonParceable/app/build/intermediates/pre-dexed/debug/classes-85a0e5cd63ab9040c150179d1db36b42b77f230a.jar" />
+        <dex dex="/Users/phil/Documents/Development/github/GsonParcelable/gson_parcelable/build/intermediates/pre-dexed/test/debug/classes-04a5f225812e0438ea8fed7473a8467fbcb14d15.jar" />
+    </item>
+    <item
+        jar="/Users/phil/Documents/Development/github/GsonParcelable/gson_parcelable/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/phil/Documents/Development/github/GsonParcelable/gson_parcelable/build/intermediates/pre-dexed/test/debug/internal_impl-22.2.1-9aae6404fa0db009a384861bab504dd353bd18a5.jar" />
+    </item>
+    <item
+        jar="/Users/phil/Documents/Development/github/GsonParcelable/gson_parcelable/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/phil/Documents/Development/github/GsonParcelable/gson_parcelable/build/intermediates/pre-dexed/test/debug/classes-918fbc0c7c51d6ec25668eab29d12565b77ff95f.jar" />
     </item>
     <item
         jar="/Users/phil/Documents/Development/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/Users/phil/Documents/Development/personal/GsonParceable/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-d5f20642ba2639c90185d5a872b8877c03943b27.jar" />
+        <dex dex="/Users/phil/Documents/Development/github/GsonParcelable/gson_parcelable/build/intermediates/pre-dexed/test/debug/support-annotations-22.2.1-d5f20642ba2639c90185d5a872b8877c03943b27.jar" />
     </item>
 
 </items>

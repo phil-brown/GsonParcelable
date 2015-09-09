@@ -11,16 +11,34 @@ import android.test.InstrumentationTestCase;
  */
 public class ParcelingTest extends InstrumentationTestCase {
 
-    public void testParceling() {
-        Contact contact = new Contact();
-        contact.setName("John Doe");
-        contact.setEmail("jdoe@fakedomain.com");
-        contact.setFavorite(true);
+    private Contact mContact;
+
+    @Override
+    public void setUp() throws Exception {
+        super.setUp();
+        mContact = new Contact();
+        mContact.setName("John Doe");
+        mContact.setEmail("jdoe@fakedomain.com");
+        mContact.setFavorite(true);
+    }
+
+    public void testSimpleParceling() {
         Parcel parcel = Parcel.obtain();
-        contact.writeToParcel(parcel, 0);
+        mContact.writeToParcel(parcel, 0);
         parcel.setDataPosition(0);
 
         Contact parceledContact = Contact.CREATOR.createFromParcel(parcel);
-        assertEquals(contact, parceledContact);
+        assertEquals(mContact, parceledContact);
+    }
+
+    public void testComplexParceling() {
+        Parcel parcel = Parcel.obtain();
+        AddressBook addressBook = new AddressBook();
+        addressBook.addContact(mContact);
+        addressBook.writeToParcel(parcel, 0);
+        parcel.setDataPosition(0);
+
+        AddressBook parceledAddressBook = AddressBook.CREATOR.createFromParcel(parcel);
+        assertEquals(addressBook, parceledAddressBook);
     }
 }
