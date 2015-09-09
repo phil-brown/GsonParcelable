@@ -63,3 +63,11 @@ public class Person extends GsonParcelable {
 ````
 
 That's it! Everything else is handled for you.
+
+## How to import
+
+The easiest way to include this in your project currently is to copy + paste the *gson_parcelable* directory into your project's root directory, and add a reference in the *gradle.settings* file:
+
+    include ':app', ':gson_parcelable'
+    
+Then re-sync your gradle files.

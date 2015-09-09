@@ -8,15 +8,22 @@ import com.google.gson.Gson;
 import java.lang.reflect.Array;
 
 /**
- * TODO Description
+ * Parcelable Creator class that uses GSON to convert a Parcel to an Object
  *
  * @author Phil Brown
  * @since 1:27 PM Aug 14, 2015
  */
 public abstract class GsonCreator<T extends GsonParcelable> implements Parcelable.Creator<T> {
 
+    /**
+     * The class that will be unmarshalled from the Parcel object
+     */
     private Class<T> clazz;
 
+    /**
+     * Constructor
+     * @param clazz the class that will be created from the Parcel
+     */
     public GsonCreator(Class<T> clazz) {
         this.clazz = clazz;
     }
@@ -31,5 +38,29 @@ public abstract class GsonCreator<T extends GsonParcelable> implements Parcelabl
         return (T[]) Array.newInstance(clazz, size);
     }
 
+    /**
+     * Subclasses must return the GSON instance that should be used. Simple objects can just use
+     * the default GSON, however it is recommended to have a static copy so unparceling does not
+     * create a new instance every time:
+     * <pre>
+     *     public class Person extends GsonParcelable {
+     *         private static Gson sGson = new Gson();
+     *
+     *         public static final GsonCreator<Person> CREATOR = new GsonCreator<Person>(Person.class) {
+     *               @Override
+     *               public Gson getGson() {
+     *                  return sGson;
+     *               }
+     *         };
+     *
+     *         @Override
+     *         public GsonCreator getCREATOR() {
+     *              return CREATOR;
+     *         }
+     *     }
+     * </pre>
+     * More complex objects (such as objects containing other models) can use more complex Gson instances.
+     * @return
+     */
     public abstract Gson getGson();
 }

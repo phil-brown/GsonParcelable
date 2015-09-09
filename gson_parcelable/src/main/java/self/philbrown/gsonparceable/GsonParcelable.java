@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * superclass for simple Parceling with Gson
+ * Superclass for simple Parceling with Gson.
  *
  * @author Phil Brown
  * @since 1:26 PM Aug 14, 2015
@@ -21,5 +21,9 @@ public abstract class GsonParcelable implements Parcelable {
         dest.writeString(getCREATOR().getGson().toJson(this));
     }
 
+    /**
+     * Get the CREATOR object used for unmarshalling the Parcel.
+     * @return
+     */
     public abstract GsonCreator getCREATOR();
 }
