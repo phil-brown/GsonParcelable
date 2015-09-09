@@ -2,7 +2,7 @@
 
 **Simple GSON Parceling for Android**
 
-This library can be used for a quick and dirty parceling mechanism for Android apps. It is not made for speed, but rather for simplicity.
+This Android library can be used to quickly add the parceling mechanism to a model object. It is not made for speed, but rather for simplicity.
 
 To use GSON for parceling an Object, follow this example:
 
