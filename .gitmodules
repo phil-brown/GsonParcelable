@@ -1,0 +1,3 @@
+[submodule "gson_parcelable"]
+	path = gson_parcelable
+	url = git@github.com:phil-brown/GsonParcelableModule.git
