@@ -66,7 +66,7 @@ That's it! Everything else is handled for you.
 
 ## How to import
 
-The easiest way to include this in your project currently is to copy + paste the *gson_parcelable* directory into your project's root directory, and add a reference in the *gradle.settings* file:
+The easiest way to include this in your project currently is to add the [module](https://github.com/phil-brown/GsonParcelableModule) as a git submodule in your project's root directory (may wish to fork), and add a reference in the *gradle.settings* file:
 
     include ':app', ':gson_parcelable'
     
